@@ -18,3 +18,5 @@ iris %>% group_by(Class) %>% summarize( Min.Sepal.Length = min(Sepal.Length, na.
                                         SD.Sepal.Length = sd(Sepal.Length, na.rm=T))  %>% as.data.frame()
 
 
+boxplot(Sepal.Length ~ Class, data = iris)
+boxplot(Sepal.Width ~ Class, data = iris)
